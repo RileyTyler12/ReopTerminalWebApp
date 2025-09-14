@@ -1,0 +1,71 @@
+body {
+	background-color: #0c0c0c;
+	color: green;
+	font-family: "Syne Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+}
+
+iframe {
+	border: 1px solid green;
+	margin: auto;
+}
+
+#terminal-container {
+	display: flex;
+	flex: 1;
+}
+
+#terminal-screen {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1%;
+  background-color: black;
+}
+
+#log-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+#input-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#textarea-log {
+	width: 100%;
+	field-sizing: content;
+	resize: none;
+	background-color: black;
+	border: 1px solid black;
+	outline: none;
+	color: green;
+	font-family: "Syne Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+}
+
+#textarea-input {
+	width: 100%;
+	field-sizing: content;
+	resize: none;
+	background-color: black;
+	border: 1px solid black;
+	outline: none;
+	color: green;
+	font-family: "Syne Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+}
+
