@@ -126,14 +126,14 @@ function viewLogCommand(inputText) {
 								"LOG END 7/27/9023";
 			break;
 		default:
-			string = "\n" + "Log not found. Usage Ex.\"viewLog 00#\"";
+			string = "\n" + "Log not found. Usage: \"viewLog ###\"";
 			break;
 	}
 	
 	displayResults(string);
 }
 
-function youtubeCommand(inputText) {
+function youtubeCommand(inputText) { //command for fun to show youtube video by using id as a parameter
 	let oldVideo = document.getElementById("youtubeVideo");
 	if (oldVideo) {
 		oldVideo.remove();
@@ -145,6 +145,9 @@ function youtubeCommand(inputText) {
 	if (videoID) {
 	   let newVideoHtml = "<iframe id='youtubeVideo' width='640' height='480' allowfullscreen src='http://www.youtube.com/embed/" + videoID + "?autoplay=1'></iframe>";
 	   logContainer.insertAdjacentHTML("afterend", newVideoHtml);
+	}
+	else {
+		displayResults("\n" + "No video ID. Usage: \"youtube videoID\"")
 	}
 }
 
