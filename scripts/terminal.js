@@ -144,7 +144,7 @@ function youtubeCommand(inputText) { //command for fun to show youtube video by 
 	let videoID = inputTextArray[1];
 	if (videoID) {
 		if (videoID !== "close") {
-			let newVideoHtml = "<iframe id='youtubeVideo' width='640' height='480' allowfullscreen src='https://www.youtube.com/embed/" + videoID + "?autoplay=1'></iframe>";
+			let newVideoHtml = "<iframe id='youtubeVideo' width='640' height='480' allow='autoplay;' allowfullscreen src='https://www.youtube.com/embed/" + videoID + "?autoplay=1'></iframe>";
 			logContainer.insertAdjacentHTML("afterend", newVideoHtml);
 		}
 	}
