@@ -1,1 +1,1 @@
-This is a simple terminal created with HTML, CSS, and vanilla JavaScript. I made it for fun with creative direction from a friend. This may expand into something larger, or stay how it is for concept.
+This is a simple terminal created with HTML, CSS, and vanilla JavaScript. I quickly made it for fun with creative direction from a friend. This may expand into something larger, or stay how it is for concept.
