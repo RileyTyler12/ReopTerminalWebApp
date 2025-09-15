@@ -109,7 +109,7 @@ function helpCommand() {
 }
 
 function infoCommand() {
-	let string = "\n" + "Reop Technologies Corporation (made for fun by Reop)";
+	let string = "\n" + "Reop Technologies Corporation (Everything is fictional and made for fun by Reop and Friends)";
 	displayResults(string);
 }
 
