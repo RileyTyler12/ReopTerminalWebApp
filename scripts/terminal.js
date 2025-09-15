@@ -143,11 +143,13 @@ function youtubeCommand(inputText) { //command for fun to show youtube video by 
 	let inputTextArray = inputText.split(" ");
 	let videoID = inputTextArray[1];
 	if (videoID) {
-	   let newVideoHtml = "<iframe id='youtubeVideo' width='640' height='480' allowfullscreen src='https://www.youtube.com/embed/" + videoID + "?autoplay=1'></iframe>";
-	   logContainer.insertAdjacentHTML("afterend", newVideoHtml);
+		if (videoID !== "close") {
+			let newVideoHtml = "<iframe id='youtubeVideo' width='640' height='480' allowfullscreen src='https://www.youtube.com/embed/" + videoID + "?autoplay=1'></iframe>";
+			logContainer.insertAdjacentHTML("afterend", newVideoHtml);
+		}
 	}
 	else {
-		displayResults("\n" + "No video ID. Usage: \"youtube videoID\"")
+		displayResults("\n" + "No video ID. Usage: \"youtube videoID|close\"")
 	}
 }
 
