@@ -27,6 +27,11 @@ iframe {
   background-color: black;
 }
 
+#title {
+	text-align: center;
+	border: 1px solid green;
+}
+
 #log-container {
   display: flex;
   flex: 1;
