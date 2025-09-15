@@ -86,7 +86,8 @@ function displayResults(string) { //displays the command results in a typewriter
 	//Previous prompt function
 function previousPrompt() {
 	if (inputHistory[previousInputCount]) {
-		inputTextArea.value = inputHistory[previousInputCount];
+		let arrayIndex = (inputHistory.length - 1) - previousInputCount;
+		inputTextArea.value = inputHistory[arrayIndex];
 		previousInputCount++;
 	}
 }
