@@ -8,6 +8,7 @@ import { infoCommand } from './cmd_info.js';
 import { viewLogCommand } from './cmd_viewLog.js';
 import { sysinfoCommand } from './cmd_sysinfo.js';
 import { youtubeCommand } from './cmd_youtube.js';
+import { budgeterCommand } from './cmd_budgeter.js';
 
 //Global Variables
 let inputAllowed = true;
@@ -60,7 +61,7 @@ function execute() {
 		case "clear":
 			clearCommand();
 			break;
-		default: //check for multiple option commands, if command still not found call defaultCommand()
+		default: //check for multiple option commands, if command still not found call defaultCommand() [this can be improved soon]
 			if (inputText.includes("viewLog")) {
 				commandFound = true;
 				viewLogCommand.run(inputText);
@@ -68,6 +69,10 @@ function execute() {
 			if (inputText.includes("youtube")) {
 				commandFound = true;
 				youtubeCommand.run(inputText);
+			}
+			if (inputText.includes("budgeter")) {
+				commandFound = true;
+				budgeterCommand.run(inputText);
 			}
 			if (commandFound != true) {
 				if (inputText !== "") {
