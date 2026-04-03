@@ -11,6 +11,7 @@ export const helpCommand = {
 								"help" + "\n" + 
 								"info" + "\n" +
 								"viewLog" + "\n" +
+                                "sysinfo" + "\n" +
 								"youtube" + "\n" +
 								"clear";
 	

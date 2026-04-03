@@ -6,6 +6,7 @@ import { defaultCommand } from './cmd_default.js';
 import { helpCommand } from './cmd_help.js';
 import { infoCommand } from './cmd_info.js';
 import { viewLogCommand } from './cmd_viewLog.js';
+import { sysinfoCommand } from './cmd_sysinfo.js';
 import { youtubeCommand } from './cmd_youtube.js';
 
 //Global Variables
@@ -45,12 +46,16 @@ function execute() {
 	}
 	inputTextArea.value = ""; //Clear input textarea
 	
+	//Commands
 	switch (inputText) { //Switch to determine command to execute.
 		case "help":
 			helpCommand.run();
 			break;
 		case "info":
 			infoCommand.run();
+			break;
+		case "sysinfo":
+			sysinfoCommand.run();
 			break;
 		case "clear":
 			clearCommand();
