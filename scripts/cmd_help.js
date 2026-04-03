@@ -13,6 +13,7 @@ export const helpCommand = {
 								"viewLog" + "\n" +
                                 "sysinfo" + "\n" +
 								"youtube" + "\n" +
+                                "budgeter" + "\n" +
 								"clear";
 	
 	    displayResults.run(string);
