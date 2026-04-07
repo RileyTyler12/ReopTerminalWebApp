@@ -1,7 +1,7 @@
 "use strict";
 //Written by Riley Tyler
 
-//Import Command Modules
+//Import Command Object Modules
 import { defaultCommand } from './cmd_default.js';
 import { helpCommand } from './cmd_help.js';
 import { infoCommand } from './cmd_info.js';
